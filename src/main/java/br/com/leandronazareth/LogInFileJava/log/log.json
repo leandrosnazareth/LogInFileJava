@@ -1,0 +1,9 @@
+{
+    "@timestamp": "2023-11-25T10:46:23.014-03:00",
+    "@version": "1",
+    "message": "Erro ao formatar log de retorno como JSON: No serializer found for class br.com.leandronazareth.LogInFileJava.log.LoggingAspect$LogMessage and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS)",
+    "logger_name": "br.com.leandronazareth.LogInFileJava.log.LoggingAspect",
+    "thread_name": "main",
+    "level": "ERROR",
+    "level_value": 40000
+}

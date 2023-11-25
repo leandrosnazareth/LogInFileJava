@@ -1,0 +1,28 @@
+<!-- PADRÃO -->
+<!-- <configuration>
+    <appender name="fileAppender" class="ch.qos.logback.core.FileAppender">
+        <file>${LOG_PATH:-${LOG_PATH_FROM_PROPERTIES:-logs}}/application.log</file>
+        <append>true</append>
+        <prudent>true</prudent>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <root level="info">
+        <appender-ref ref="fileAppender"/>
+    </root>
+</configuration> -->
+
+
+<!-- JSON -->
+<configuration>
+    <appender name="fileAppender" class="ch.qos.logback.core.FileAppender">
+        <file>${LOG_PATH:-${LOG_PATH_FROM_PROPERTIES:-logs}}/application.log</file>
+        <append>true</append>
+        <prudent>true</prudent>
+        <encoder class="net.logstash.logback.encoder.LogstashEncoder" />
+    </appender>
+    <root level="info">
+        <appender-ref ref="fileAppender" />
+    </root>
+</configuration>
